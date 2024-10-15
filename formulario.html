@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Solicitud</title>
+</head>
+<body>
+    <h1>HOJA DE INSCRIPCION EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+    
+    <form>
+        <fieldset style="background-color: #63594D;">
+            <legend style="background-color: #eae3d1;">Datos personales</legend>
+    <form class="formulario">
+        <p class="section datos-personales">
+            <table>
+                <tr>
+                    <td><label>Nombre (*):</label> </td>
+                    <td><label>Apellidos (*):</label> </td>
+                    <td><label>DNI (*):</label> </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Localidad de Nacimiento:</label> </td>
+                    <td><label>Provincia:</label></td>
+                    <td><label>Fecha de Nacimiento:</label> </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td>      
+                        <select name="opciones" id="lang">
+                        <optgroup label="Andalucía">
+                            <option value="opciones">Huelva</option></p>
+                        <option value="opciones">Sevilla</option></p>
+                        <option value="opciones">Cádiz</option></p>
+                        <option value="opciones">Córdoba</option></p>
+                        <option value="opciones">Jaén</option></p>
+                        <option value="opciones">Granada</option></p>
+                        <option value="opciones">Málaga</option></p>
+                        <option value="opciones">Almería</option></p>
+                        <optgroup label="Castilla">
+                        <option value="opciones">Ávila</option></p>
+                        <option value="opciones">Burgos</option></p>
+                        <option value="opciones">Leon</option></p>
+                        <option value="opciones">Palencia</option></p>
+                        <option value="opciones">Segovia</option></p>
+                        <option value="opciones">Soria</option></p>
+                        <option value="opciones">Salamanca</option></p>
+                        <option value="opciones">Valladolid</option></p>
+                        <option value="opciones">Zamora</option></p>
+                      </select></p> </td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label>Dirección (*):</label></td>
+                    <td></td>
+                    <td><label>Código Postal:</label></td>
+                </tr>
+                <tr>
+                <td colspan="2"><input type="text" size="40"></td>
+                <td ><input type="number" id="postal" maxlength="5"></td>
+            </tr>
+                <tr>
+                    <td><label>Email (*):</label></td>
+                    <td></td>
+                    <td><label>Teléfono (*):</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input size="40"
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="usuario@dominio.com"
+                        required
+                      /></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </p>
+    </fieldset>
+    <fieldset style="background-color: #B18272;">
+        <legend style="background-color:#eae3d1">Forma de acceso</legend>
+        <p class="section forma-acceso">
+            <ul style="list-style-type: none;">
+                <li ><label><input type="radio" name="acceso" value="directo"> Directo</label></li>
+                <ul style="list-style-type: none;"><li><label><input type="radio" name="acceso" value="bachillerato"> Bachillerato Log Modalidad <input type="text"></label></li>
+                <li><label><input type="radio" name="acceso" value="experimental"> Experimental</label></li>
+                <li><label><input type="radio" name="acceso" value="cou"> COU Opción<input type="text"></label></li>
+                <li><label><input type="radio" name="acceso" value="fp2"> FP2</label></li>
+                <li><label><input type="radio" name="acceso" value="otros"> Otros (especifique): <input type="text"></label></li>
+            </ul>
+            </ul>
+            <ul style="list-style-type: none;">
+                
+                <li><label><input type="radio" name="acceso" value="prueba-libre"> Prueba Libre</label></li>
+            </ul>
+        </p>
+    </fieldset>
+    <fieldset style="background-color: #C2B291;">
+        <legend style="background-color:#eae3d1">Documentos Adjuntados</legend>
+        <p class="section documentos-adjuntos">
+            <table>
+                <tr>
+           <td><label><input type="checkbox"> Fotocopia DNI</label></td> 
+           <td> <label><input type="checkbox"> Certificado Académico</label></td> 
+            </tr>
+            <tr>
+            <td><label><input type="checkbox"> Otros documentos (especifique)<input type="text"></label></td> 
+        </tr></table>
+<label>Adjuntar documentos (puedes subir más de un documento): <input type="file" multiple></label>
+          </p>
+    </fieldset>
+    <fieldset style="background-color: #d6e4c3;">
+        <legend style="background-color:#eae3d1">Personaliza</legend>
+        <p class="section personaliza">
+           <p> <label>Código Personalizado: <input type="text"></label></p>
+            <p><label>Grupo del curso: <input type="text"></label></p>
+            <p><label>Idioma Certificado:
+                <select>
+                    <option>Inglés</option>
+                    <option>Español</option>
+                    <option>Francés</option>
+                    <option>Alemán</option>
+                </select>
+            </label></p>
+           <p> <label>Certificación en idiomas: <input type="text"></label></p>
+        </p>
+    </fieldset>
+    <fieldset style="background-color: #eae3d1;">
+        <legend style="background-color:#eae3d1">Personaliza</legend>
+        <p class="section otros-datos">
+            <p><label>Indique cualquier otra cosa a tener en cuenta:</label></p>
+            <label >
+                <textarea placeholder="Déjanos tu comentario" style="height: 100px;width: 250px;"></textarea>
+            </label>
+        </p>
+    </fieldset>
+
+        <p class="section acciones">
+            <button type="submit">Enviar Solicitud</button>
+            <button type="reset">Resetear</button>
+        </p>
+    </form>
+</body>
+</html>
